@@ -1,0 +1,23 @@
+.caixa-livros {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  padding-inline-start: 0px;
+  justify-content: space-around;
+}
+
+.livro {
+  width: 25%;
+  height: 250px;
+  list-style-type: none;
+  border: 1px solid #000;
+  margin: 5px;
+  position: relative;
+}
+
+.imagem-livro {
+  width: 90%;
+  height: 120px;
+  top: 5px;
+  position: relative;
+}

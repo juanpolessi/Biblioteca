@@ -1,0 +1,7 @@
+.biblioteca {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  background-color: #993300;
+  justify-content: center;
+}
