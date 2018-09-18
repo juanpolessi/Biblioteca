@@ -30,6 +30,30 @@ class Biblioteca extends Component {
             "https://www.colegioweb.com.br/wp-content/uploads/2014/08/Livros.jpg",
           nomeLivro: "Livro4",
           nomeAutor: "Autor4"
+        },
+        {
+          imagem:
+            "https://www.colegioweb.com.br/wp-content/uploads/2014/08/Livros.jpg",
+          nomeLivro: "Livro5",
+          nomeAutor: "Autor5"
+        },
+        {
+          imagem:
+            "https://www.colegioweb.com.br/wp-content/uploads/2014/08/Livros.jpg",
+          nomeLivro: "Livro6",
+          nomeAutor: "Autor6"
+        },
+        {
+          imagem:
+            "https://www.colegioweb.com.br/wp-content/uploads/2014/08/Livros.jpg",
+          nomeLivro: "Livro7",
+          nomeAutor: "Autor7"
+        },
+        {
+          imagem:
+            "https://www.colegioweb.com.br/wp-content/uploads/2014/08/Livros.jpg",
+          nomeLivro: "Livro8",
+          nomeAutor: "Autor8"
         }
       ]
     };
