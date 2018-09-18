@@ -9,15 +9,17 @@ class Livro extends Component {
 
   render() {
     return (
-      <ul className="caixa-livros">
-        {this.props.livros.map(livro => (
-          <li className="livro">
-            <ImagemLivro imagem={livro.imagem} />
-            <h1>{livro.nomeLivro}</h1>
-            <h4>{livro.nomeAutor}</h4>
-          </li>
-        ))}
-      </ul>
+      <div className="caixa-livros">
+        <ul>
+          {this.props.livros.map(livro => (
+            <li className="livro">
+              <ImagemLivro imagem={livro.imagem} />
+              <h1>{livro.nomeLivro}</h1>
+              <h4>{livro.nomeAutor}</h4>
+            </li>
+          ))}
+        </ul>
+      </div>
     );
   }
 }

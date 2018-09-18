@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Livro from "./Livro";
+import Pesquisa from  "./Pesquisa"
 import "./Biblioteca.css";
 
 class Biblioteca extends Component {
@@ -62,6 +63,7 @@ class Biblioteca extends Component {
   render() {
     return (
       <div className="biblioteca">
+        <Pesquisa />
         <Livro livros={this.state.livros} />
       </div>
     );
