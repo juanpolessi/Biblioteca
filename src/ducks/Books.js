@@ -12,7 +12,7 @@ const INITIAL_STATE = {
 }
 
 export default function reducer(state = INITIAL_STATE, action){
-    const {error, books, type } = action;
+    const { error, books, type } = action;
 
     switch(type){
         case CALL_FETCH_BOOKS:
@@ -32,10 +32,10 @@ export const fetchBooks = () => {
     return { type: CALL_FETCH_BOOKS }
 }
 
-export const fetchBooksSuccess = () => {
+export const fetchBooksSuccess = books => {
     return { type: CALL_FETCH_BOOKS_SUCCESS, books }
 }
 
-export const fetchBooksFailed = () => {
+export const fetchBooksFailed = error => {
     return { type: CALL_FETCH_BOOKS_FAILED, error }
 }

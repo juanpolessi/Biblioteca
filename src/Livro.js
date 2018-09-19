@@ -1,27 +1,52 @@
-import React, { Component } from "react";
-import ImagemLivro from "./ImagemLivro";
-import "./Livro.css";
+import React, { Component, Fragment } from "react";
+import { Avatar, List } from "antd";
+import { connect } from 'react-redux'
+import { fetchBooks } from './ducks/Books'
 
+import 'antd/dist/antd.css'
+import "./Livro.css";
 class Livro extends Component {
-  constructor(props) {
-    super(props);
+  
+  componentDidMount() {
+    const { callFetchBooks } = this.props
+    callFetchBooks()
   }
 
   render() {
+    const { booksData } = this.props
     return (
       <div className="caixa-livros">
-        <ul>
-          {this.props.livros.map(livro => (
-            <li className="livro">
-              <ImagemLivro imagem={livro.imagem} />
-              <h1>{livro.nomeLivro}</h1>
-              <h4>{livro.nomeAutor}</h4>
-            </li>
-          ))}
-        </ul>
+        <Fragment>
+          <List
+            locale={{ emptyText: 'Nenhum Livro Encontrado'}}
+            dataSource={booksData.books}
+            loading={booksData.loading}
+            renderItem={ books => (
+              <List.Item>
+                <List.Item.Meta
+                  avatar= { <Avatar size="large" shape="square" src={books.image}/>} 
+                  title= { books.nameBook }
+                  description= {`${books.nameAuth}-${books.description}`}
+                  />
+              </List.Item>
+            )}
+            />
+        </Fragment>
       </div>
     );
   }
 }
 
-export default Livro;
+function mapStateToProps({ booksData }){
+  return { booksData }
+}
+
+function mapDispatchToProps(dispatch){
+  return{
+    callFetchBooks () {
+      dispatch(fetchBooks())
+    }
+  }
+}
+
+export default connect(mapStateToProps,mapDispatchToProps)(Livro);

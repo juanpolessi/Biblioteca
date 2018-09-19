@@ -2,6 +2,8 @@ import React, { Component } from "react";
 import Livro from "./Livro";
 import Pesquisa from  "./Pesquisa"
 
+import './Biblioteca.css'
+
 class Biblioteca extends Component {
   constructor(props) {
     super(props);  
@@ -9,9 +11,9 @@ class Biblioteca extends Component {
 
   render() {
     return (
-      <div>
+      <div className="biblioteca">
         <Pesquisa />
-        <Livro livros={this.state.livros} />
+        <Livro />
       </div>
     );
   }
