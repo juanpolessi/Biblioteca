@@ -21,9 +21,11 @@ class Pesquisa extends Component{
     render(){
         return(
             <div className="pesquisa">
-                <div>
-                    {/* <img src={biblioteca} alt="books"/> */}
-                    <label className="fas fa-books"></label>
+                <div className="logo-biblioteca">
+                    <label>
+                        <span>Books</span>
+                        <i class="fas fa-book-reader"></i>
+                    </label>                   
                 </div>
                 <div className="input-pesquisa">
                     <div>
