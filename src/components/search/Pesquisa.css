@@ -1,7 +1,7 @@
 .pesquisa{
     width: 100%;
     height: 300px;
-    background-color: #fff;
+    background-color: #3c3f4d;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -15,12 +15,32 @@ img{
     height: 60%;
 }
 
-input {
-    width: 60%;
+.input-pesquisa{
+    width: 50%;
+    border-radius: 7px;
+    border-width: 1pt;
+    border-image-slice: 1;
+    padding: 1px;
+    background: linear-gradient(to right, #a798ef, #528bb9);
+}
+
+.input-pesquisa div{
+    background: #3c3f4d;
+    border: 1px solid transparent;
+    border-radius: 7px;
+}
+
+.input-pesquisa input {
+    width: 90%;
     height: 35px;
-    border: 0.5px solid #737373;
-    border-radius: 6px;
+    background-color: transparent;
+    border: 0px;
     padding: 4px;
     font-size: 22px;
     font-family: 'Arial'
+}
+
+.input-pesquisa span{
+    margin: 0 10px 0px 10px;
+    color: #528bb9;
 }

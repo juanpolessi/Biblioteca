@@ -1,7 +1,7 @@
 .caixa-livros {
   display: flex;
   flex-wrap: wrap;
-  background-color: #8e9eab;
+  background-color: #fff;
   justify-content: center;
 }
 
