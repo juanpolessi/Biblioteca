@@ -12,9 +12,3 @@ body {
   height: 100%;
 }
 
-input{
-  width: 80%;
-  height: 35px;
-  border: 0.5px solid #000;
-  border-radius: 6px;
-}

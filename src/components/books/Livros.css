@@ -1,0 +1,32 @@
+.caixa-livros {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #8e9eab;
+  justify-content: center;
+}
+
+.livro {
+  width: 15%;
+  height: 250px;
+  list-style-type: none;
+  border: 1px solid #000;
+  border-radius: 10px;
+  text-align: center;
+  background-color: #fff;
+  margin: 20px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.livro:hover {  
+  background-color: #d8eaef;
+}
+
+h1{
+  font-size: 20px;
+}
+
+
+
