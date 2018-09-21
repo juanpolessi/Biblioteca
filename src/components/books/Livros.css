@@ -1,25 +1,17 @@
 .caixa-livros {
+  padding: 0 20px;
   display: flex;
   flex-wrap: wrap;
   background-color: #fff;
   justify-content: center;
 }
 
-.borda-livros{
+.livro {
+  margin: 10px;
   width: 15%;
   height: 250px;
-  border-radius: 10px;
-  border-width: 1pt;
-  border-image-slice: 1;
-  padding: 1px;
-  background: linear-gradient(to right, #a798ef, #528bb9);  
-  margin: 20px;
-}
-
-.livro {
-  height: 248px;
   list-style-type: none;
-  border: 1px solid transparent;
+  border: 1px solid #528bb9;
   border-radius: 10px;
   text-align: center;
   background-color: #fff;

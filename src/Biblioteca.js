@@ -16,16 +16,10 @@ class Biblioteca extends Component {
   render() {
     const { nameBook } = this.state
     const livros = books
-    const listaLivros = []
 
-    livros.forEach(livro => {
-      if(listaLivros.indexOf(livro.nameBook) === -1)
-      listaLivros.push(livro.nameBook)
-    });
-
-    const showingBooks = nameBook.length === 0 
+    const showingBooks = nameBook.length === 0
                               ? livros
-                              : livros.filter(livro => livro.nameBook === nameBook)
+                              : livros.filter(livro => livro.nameBook.toUpperCase().indexOf(nameBook.toUpperCase()) !== -1)
     
     return (
       <div className="biblioteca">

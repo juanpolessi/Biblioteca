@@ -5,17 +5,9 @@ import biblioteca from '../../img/biblioteca.png'
 
 class Pesquisa extends Component{
 
-    constructor(props) {
-        super(props);
-    
-        this.handleInputChange = this.handleInputChange.bind(this);
-    }
-
-    handleInputChange(event) {
-        const livros = this.props.bookList
-        livros.map(book => (
-            book.nameBook === event.target.value
-        ))
+    handleInputChange = (event) => {
+        const { onBookChange } = this.props;
+        onBookChange(event.target.value);
     }
     
     render(){
@@ -24,8 +16,8 @@ class Pesquisa extends Component{
                 <div className="logo-biblioteca">
                     <label>
                         <span>Books</span>
-                        <i class="fas fa-book-reader"></i>
-                    </label>                   
+                    </label>
+                    <i class="fas fa-book-reader"></i>                   
                 </div>
                 <div className="input-pesquisa">
                     <div>
