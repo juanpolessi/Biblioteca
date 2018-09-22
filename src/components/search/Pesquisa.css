@@ -12,41 +12,32 @@
 
 .logo-biblioteca{
     height: 30%;
+    color: #37a2fa;
 }
 
 .logo-biblioteca label{
     font-family: 'Times New Roman', Times, serif;
     font-size: 60px;
-    background: linear-gradient(to right, #a798ef, #528bb9);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
 }
 
 .logo-biblioteca i{
     font-size: 45px;
     margin: 0 0 0 15px;
-    background: linear-gradient(to right, #a798ef, #528bb9);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
 }
 
 .input-pesquisa{
     width: 50%;
+    border: 1px solid #528bb9;
     border-radius: 7px;
-    border-width: 1pt;
-    border-image-slice: 1;
-    padding: 1px;
-    background: linear-gradient(to right, #a798ef, #528bb9);
 }
 
 .input-pesquisa div{
     background: #3c3f4d;
-    border: 1px solid transparent;
     border-radius: 7px;
 }
 
 .input-pesquisa input {
-    width: 90%;
+    width: calc(100% - 30px);
     height: 35px;
     background-color: transparent;
     border: 0px;
@@ -61,6 +52,8 @@
 }
 
 .input-pesquisa span{
-    margin: 0 10px 0px 10px;
+    margin-left: 10px;
     color: #528bb9;
+    right: 10px;
+    position: relative;
 }

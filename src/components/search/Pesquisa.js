@@ -20,10 +20,8 @@ class Pesquisa extends Component{
                     <i class="fas fa-book-reader"></i>                   
                 </div>
                 <div className="input-pesquisa">
-                    <div>
-                        <input type="text" onChange={this.handleInputChange}/>
-                        <span className="fas fa-search"></span>
-                    </div>
+                    <input type="text" onChange={this.handleInputChange}/>
+                    <span className="fas fa-search"></span>
                 </div>
             </div>
         )

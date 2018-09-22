@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import ImagemLivro from './ImagemLivro'
 import { Modal } from 'antd';
-import "./Livros.css";
+import "./Livros.css"; 
 
 class Livros extends Component {
 
@@ -47,7 +47,7 @@ class Livros extends Component {
           {
             !book
             ? ''
-            : <Modal
+            : <Modal                
                 title={book.nameBook}
                 visible={this.state.visible}
                 onOk={this.handleOk}
