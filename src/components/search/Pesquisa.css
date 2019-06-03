@@ -1,7 +1,7 @@
 .pesquisa{
     width: 100%;
     height: 300px;
-    background-color: #3c3f4d;
+    background-color: #f3f3f3;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -12,7 +12,7 @@
 
 .logo-biblioteca{
     height: 30%;
-    color: #37a2fa;
+    color: #07365d;
 }
 
 .logo-biblioteca label{
